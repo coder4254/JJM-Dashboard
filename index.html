@@ -1,129 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JJM-Obeservation Maps Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #1fb1bc;
-            color: #fff;
-            text-align: center;
-            padding: 30px;
-            position: relative;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin: 0;
-        }
-
-        h2 {
-            font-size: 24px;
-            margin: 0;
-        }
-
-        .logo-left {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 100px; /* Set a fixed width for the left logo */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        .logo-right {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 100px; /* Set a fixed width for the right logo */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        .district-links {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .district-links a {
-            text-decoration: none;
-            color: #333;
-            background-color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin: 10px;
-            display: inline-block;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .district-links a:hover {
-            background-color: #333;
-            color: #fff;
-        }
-
-        .map-image {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .map-image img {
-            max-width: 80%; /* Adjust the percentage to your preference */
-            height: auto;
-            display: block; /* Ensure the image is displayed as a block element */
-            margin: 0 auto; /* Center the image horizontally */
-        }
-        footer {
-            background-color: #1fb1bc;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <img src="https://jaljeevanmission.gov.in//themes/edutheme/images/jjm_new_logo.svg" alt="Left Logo" class="logo-left">
-        <h1>JJM Obeservation Maps Page</h1>
-        <h2>Karnataka District</h2>
-        <img src="https://www.iimb.ac.in/sites/default/files/inline-images/IIMB_50_YEARS_LOGO.png" alt="Right Logo" class="logo-right">
+      <img
+        src="https://jaljeevanmission.gov.in//themes/edutheme/images/jjm_new_logo.svg"
+        alt="Left Logo"
+        class="logo-left"
+      />
+      <h1>JJM Obeservation Maps Page</h1>
+      <h2>Karnataka District</h2>
+      <img
+        src="https://www.iimb.ac.in/sites/default/files/inline-images/IIMB_50_YEARS_LOGO.png"
+        alt="Right Logo"
+        class="logo-right"
+      />
     </header>
     <div class="district-links">
-        <a href="Tumkur.html" target="_blank">Tumkur</a>
-        <a href="Ramanagar.html" target="_blank">Ramanagara [WashReport]</a>
-        <a href="Bagalkote.html" target="_blank">Bagalkote</a>
-        <a href="Uttara Kannada.html" target="_blank">Uttara Kannada</a>
-        <a href="Hassan.html" target="_blank">Hassan</a>
-        <a href="Gadag.html" target="_blank">Gadag [Latest]</a>
-        <a href="Yadgir.html" target="_blank">Yadgir</a>
-        <a href="https://yadgir-analysis.netlify.app/" target="_blank">Yadgir Analysis Report</a>
+      <a href="Tumkur.html" target="_blank">Tumkur</a>
+      <a href="Ramanagar.html" target="_blank">Ramanagara [WashReport]</a>
+      <a href="Bagalkote.html" target="_blank">Bagalkote</a>
+      <a href="Uttara Kannada.html" target="_blank">Uttara Kannada</a>
+      <a href="Hassan.html" target="_blank">Hassan</a>
+      <a href="Gadag.html" target="_blank">Gadag [Latest]</a>
+      <a href="Yadgir.html" target="_blank">Yadgir</a>
+      <a href="https://yadgir-analysis.netlify.app/" target="_blank"
+        >Yadgir Analysis Report</a
+      >
     </div>
-    
+
     <!-- <div class="map-image">
         <img src="karnataka_districts.jpg" alt="Observation Map">
     </div> -->
     <div class="map-image">
-        <!-- Define the image with a usemap attribute -->
-        <img src="karnataka_districts.jpg" alt="Observation Map" usemap="#district-map">
-        <!-- Define the image map -->
-        <map name="district-map">
-            <!-- Define clickable areas for each district -->
-            <area shape="poly" coords="100,50,200,100,150,200,50,200,0,100" href="Tumkur.html" alt="Tumkur">
-            <!-- Define more areas for other districts as needed -->
-        </map>
+      <!-- Define the image with a usemap attribute -->
+      <img
+        src="karnataka_districts.jpg"
+        alt="Observation Map"
+        usemap="#district-map"
+      />
+      <!-- Define the image map -->
+      <map name="district-map">
+        <!-- Define clickable areas for each district -->
+        <area
+          shape="poly"
+          coords="100,50,200,100,150,200,50,200,0,100"
+          href="Tumkur.html"
+          alt="Tumkur"
+        />
+        <!-- Define more areas for other districts as needed -->
+      </map>
     </div>
-    <footer>
-        &copy; 2023 JJM Team IIM Bangalore.
-    </footer>
-</body>
+    <footer>&copy; 2023 JJM Team IIM Bangalore.</footer>
+  </body>
 </html>

@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #1fb1bc;
+  background-color: #5eaaf7dd;
   color: #fff;
   text-align: center;
   padding: 30px;
@@ -71,13 +71,137 @@ h2 {
   display: block; /* Ensure the image is displayed as a block element */
   margin: 0 auto; /* Center the image horizontally */
 }
-footer {
-  background-color: #1fb1bc;
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5eaaf7dd;
   color: #fff;
+  padding: 20px 50px;
+}
+
+.footer img {
+  width: 100px;
+  height: auto;
+}
+
+.footer .footer-center {
   text-align: center;
-  padding: 10px 0;
-  margin-top: 10px;
+}
+
+.footer .footer-center p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.references ul {
+  list-style-type: decimal; /* Use decimal for numbered list */
+  padding-left: 20px; /* Add padding for proper alignment */
+  margin: 0;
+}
+
+.references li {
+  margin-bottom: 10px; /* Add space between list items */
+  line-height: 1.6;
+}
+/* Add these styles to your existing CSS */
+
+/* Ensure the images don't overflow */
+
+.overview-image {
+  max-width: 50%;
+  height: 83vh;
+  border-radius: 8px;
+}
+
+.goals-image,
+.achievements-image {
+  max-width: 50%;
+  height: 50vh;
+  border-radius: 8px;
+}
+
+
+
+.map-container {
+  width: 80%;
+  height: 750px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
   position: relative;
-  bottom: 0;
+  background: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.map-containerrr {
   width: 100%;
+  height: 750px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.map-title {
+  position: relative;
+  text-align: center;
+  background-color: #b2fef3dd;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* streamlit stylings */
+/* Style the toggle button */
+#toggle-streamlit {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the button is above other elements */
+  transition: background-color 0.3s ease;
+}
+
+#toggle-streamlit:hover {
+  background-color: #0056b3;
+}
+
+/* Container for the iframe */
+#streamlit-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  border: none;
+  transition: height 0.3s ease;
+  z-index: 999; /* Ensure the container is below the button */
+}
+
+/* Style the iframe */
+#streamlit-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }

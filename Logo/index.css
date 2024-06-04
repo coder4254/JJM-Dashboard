@@ -1,0 +1,480 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7ff;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-image: linear-gradient(to right, #0b7ef2, #5eaaf7);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.header .container h1:nth-of-type(1) {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.header .container h1:nth-of-type(2) {
+  margin-bottom: 5px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.header .container p {
+  margin: 5px 0 0;
+  font-size: 20px;
+}
+
+.container h2 {
+  font-size: 30px;
+}
+
+/* Navigation */
+.nav {
+  background-color: #99ccff;
+  padding: 15px 0;
+}
+
+.catalogue {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.catalogue-item {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px;
+  width: 300px;
+  height: 150px;
+  background: white;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.5s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.catalogue-item:hover {
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+
+.catalogue-item:hover::before,
+.catalogue-item:hover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  background: #7ac0fa;
+  border-radius: 10px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.catalogue-item:hover:after {
+  background: #a5e6fe;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #99ccff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+} */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #99ccff;
+  min-width: 250px; /* Ensure dropdown width matches catalogue */
+  padding: 20px; /* Add padding for better appearance */
+  border-radius: 10px; /* Match border radius with catalogue */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Main Content */
+.content {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .container h1 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 40px !important;
+  font-weight: 700 !important;
+  color: #fff;
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for .container h1 */
+/* .header .container h1:hover {
+  color: #0381ff;
+  transform: scale(1.1);
+} */
+
+.content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3399ff;
+  padding-bottom: 10px;
+}
+
+.content ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5eaaf7;
+  color: #fff;
+  padding: 20px 50px;
+}
+
+.footer img {
+  width: 100px;
+  height: auto;
+}
+
+.footer .footer-center {
+  text-align: center;
+}
+
+.footer .footer-center p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.references ul {
+  list-style-type: decimal; /* Use decimal for numbered list */
+  padding-left: 20px; /* Add padding for proper alignment */
+  margin: 0;
+}
+
+.references li {
+  margin-bottom: 10px; /* Add space between list items */
+  line-height: 1.6;
+}
+/* Add these styles to your existing CSS */
+
+/* Ensure the images don't overflow */
+
+.overview-image {
+  max-width: 50%;
+  height: 83vh;
+  border-radius: 8px;
+}
+
+.goals-image,
+.achievements-image {
+  max-width: 50%;
+  height: 50vh;
+  border-radius: 8px;
+}
+
+/* Flexbox layout for the overview content */
+.overview-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Adjust the flex basis and grow properties */
+.overview-content img {
+  flex: 1 1 40%; /* Image takes up 40% of the container's width */
+}
+
+.overview-content ul {
+  flex: 1 1 60%; /* Text takes up 60% of the container's width */
+}
+
+/* Flexbox layout for the goals content */
+.goals-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.goals-content ul {
+  flex: 1 1 60%; /* Text takes up 60% of the container's width */
+}
+
+.goals-content img {
+  flex: 1 1 40%; /* Image takes up 40% of the container's width */
+}
+
+/* Flexbox layout for the achievements content */
+.achievements-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.achievements-content img {
+  flex: 1 1 40%; /* Image takes up 40% of the container's width */
+}
+
+.achievements-content ul {
+  flex: 1 1 60%; /* Text takes up 60% of the container's width */
+}
+
+/* Ensure the text aligns correctly */
+.overview-content ul,
+.goals-content ul,
+.achievements-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.overview-content li,
+.goals-content li,
+.achievements-content li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Overview Section Animation */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInImage {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.overview-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  overflow: hidden; /* Prevent overflow during animation */
+}
+
+.overview-content img {
+  flex: 1 1 40%; /* Image takes up 40% of the container's width */
+  animation: fadeInImage 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.overview-content ul {
+  flex: 1 1 60%; /* Text takes up 60% of the container's width */
+  animation: fadeInText 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+/* Jal Jeevan Mission Goals Section Animation */
+@keyframes fadeInTextRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInImageLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.goals-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.goals-content ul {
+  flex: 1 1 60%;
+  animation: fadeInTextRight 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.goals-content img {
+  flex: 1 1 40%;
+  animation: fadeInImageLeft 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+/* Key Achievements Section Animation */
+.achievements-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.achievements-content img {
+  flex: 1 1 40%;
+  animation: fadeInImage 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.achievements-content ul {
+  flex: 1 1 60%;
+  animation: fadeInText 1s ease-in-out forwards;
+  opacity: 0;
+}

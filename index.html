@@ -3,20 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JJM-Obeservation Maps Page</title>
+    <title>JJM Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/Logo/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
       <img
-        src="https://jaljeevanmission.gov.in//themes/edutheme/images/jjm_new_logo.svg"
+        src="Logo/jjm_new_logo.svg"
         alt="Left Logo"
         class="logo-left"
       />
-      <h1>JJM Obeservation Maps Page</h1>
-      <h2>Karnataka District</h2>
+      <h1>JJM Obeservation Maps</h1>
+      <h1 style="color: #173a76;">Karnataka</h2>
       <img
-        src="https://www.iimb.ac.in/sites/default/files/inline-images/IIMB_50_YEARS_LOGO.png"
+        src="Logo/IIM_Bangalore_Logo.svg"
         alt="Right Logo"
         class="logo-right"
       />
@@ -34,28 +39,101 @@
       >
     </div>
 
-    <!-- <div class="map-image">
-        <img src="karnataka_districts.jpg" alt="Observation Map">
-    </div> -->
-    <div class="map-image">
-      <!-- Define the image with a usemap attribute -->
-      <img
-        src="karnataka_districts.jpg"
-        alt="Observation Map"
-        usemap="#district-map"
-      />
-      <!-- Define the image map -->
-      <map name="district-map">
-        <!-- Define clickable areas for each district -->
-        <area
-          shape="poly"
-          coords="100,50,200,100,150,200,50,200,0,100"
-          href="Tumkur.html"
-          alt="Tumkur"
-        />
-        <!-- Define more areas for other districts as needed -->
-      </map>
+    <!-- MAP -->
+    <div class="map-container">
+      <div class="map-title">Districts and Water Quality Testing Labs in Karnataka</div>
+      <div class="map-containerrr">
+        <iframe src="Index_Karnataka.html" frameborder="0"></iframe>
+      </div>
     </div>
-    <footer>&copy; 2023 JJM Team IIM Bangalore.</footer>
+
+    <section>
+      <h2>Jal Jeevan Mission Goals</h2>
+        <div class="goals-content">
+          <ul>
+            <li>
+              Provide tap connections to all rural households for regular,
+              long-term supply of safe drinking water
+            </li>
+            <li>Ensure water quality and reduce water-borne diseases</li>
+            <li>
+              Empower communities in planning, implementing, operating &
+              maintaining systems
+            </li>
+            <li>Promote groundwater recharge, conservation and reuse</li>
+          </ul>
+          <img
+            src="./images/goals.jpg"
+            alt="Image related to goals"
+            class="goals-image"
+          />
+        </div>
+    </section>
+    <section>
+      <h2>Key Achievements</h2>
+        <div class="achievements-content">
+          <img
+            src="./images/achievements.jpg"
+            alt="Image related to achievements"
+            class="achievements-image"
+          />
+          <ul>
+            <li>Increased tap water coverage from 3.23 Cr to 13.98 Cr households</li>
+            <li>9-fold increase in connections in backward districts</li>
+            <li>23.55 lakh women trained for water quality testing</li>
+            <li>206 partner organizations and 99 institutions engaged</li>
+          </ul>
+        </div>
+    </section>
+    <section>
+      <h2>References</h2>
+        <ul>
+          <li>
+            <a href="https://jaljeevanmission.gov.in/sites/default/files/publication_and_reports/JJM-Brochure-Year-2024.pdf" target="_blank"
+              >JJM-Brochure-Year-2024</a>
+          </li>
+          <li>
+            <a href="https://jaljeevanmission.gov.in/sites/default/files/guideline/WQMS-Framework.pdf" target="_blank"
+              >Water Quality, Quantity and Coverage Definitions</a>
+          </li>
+          <li>
+            <a href="https://jalshakti-ddws.gov.in/sites/default/files/JJM_Operational_Guidelines.pdf" target="_blank"
+              >JJM Operational Guidelines</a>
+          </li>
+        </ul>
+    </section>
+
+    
+    <!-- EMBEDDING STREAMLIT APP -->
+    <button id="toggle-streamlit">Open Chatbot</button>
+    <iframe
+    id="streamlit-container"
+    src="https://jjm-chatbot.streamlit.app/?embed=true&embed_options=light_theme&embed_options=hide_loading_screen"
+    style="height: 500px; width: 40%; border: 2px; border-color: blue;"
+    ></iframe>
+    <script src="script.js"></script>
+
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <img src="Logo/jjm_new_logo.svg" alt="JJM Logo" />
+      </div>
+      <div class="footer-center">
+        <p>Prof Gopal Naik, JJM Chair Professor</p>
+        <p>Mr. Chandan Kumar, Intern JJM</p>
+        <p>Esha Chakraborty, Technical Assistant JJM</p>
+        <br>
+        <p style="background-color: whitesmoke; color: #173a76;">&copy; 2024 JJM Team IIM Bangalore.</p>
+      </div>
+
+      <div class="footer-right">
+        <img
+          src="Logo/IIM_Bangalore_Logo.svg"
+          alt="IIM Bangalore Logo"
+        />
+      </div>
+    </footer>
+    
   </body>
 </html>

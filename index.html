@@ -7,26 +7,27 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
-      href="./images/Logo/favicon.ico"
+      href="./Images/Logo/favicon.ico"
       type="image/x-icon"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <img
-        src="Logo/jjm_new_logo.svg"
+        src="./Images/Logo/jjm_new_logo.svg"
         alt="Left Logo"
         class="logo-left"
       />
-      <h1>JJM Obeservation Maps</h1>
-      <h1 style="color: #173a76;">Karnataka</h2>
+      <h1>JJM Observation Maps</h1>
+      <h1 style="color: #173a76">Karnataka</h1>
       <img
-        src="Logo/IIM_Bangalore_Logo.svg"
+        src="./Images/Logo/IIM_Bangalore_Logo.svg"
         alt="Right Logo"
         class="logo-right"
       />
     </header>
-    <div class="district-links">
+    <!-- <div class="district-links">
       <a href="Tumkur.html" target="_blank">Tumkur</a>
       <a href="Ramanagar.html" target="_blank">Ramanagara [WashReport]</a>
       <a href="Bagalkote.html" target="_blank">Bagalkote</a>
@@ -37,103 +38,140 @@
       <a href="https://yadgir-analysis.netlify.app/" target="_blank"
         >Yadgir Analysis Report</a
       >
-    </div>
+    </div> -->
+    <hr />
 
     <!-- MAP -->
     <div class="map-container">
-      <div class="map-title">Districts and Water Quality Testing Labs in Karnataka</div>
+      <div class="map-title">
+        Click on the District to see the Report and Dashboard
+      </div>
       <div class="map-containerrr">
         <iframe src="Index_Karnataka.html" frameborder="0"></iframe>
       </div>
     </div>
+    <hr />
 
-    <section>
-      <h2>Jal Jeevan Mission Goals</h2>
-        <div class="goals-content">
-          <ul>
-            <li>
-              Provide tap connections to all rural households for regular,
-              long-term supply of safe drinking water
-            </li>
-            <li>Ensure water quality and reduce water-borne diseases</li>
-            <li>
-              Empower communities in planning, implementing, operating &
-              maintaining systems
-            </li>
-            <li>Promote groundwater recharge, conservation and reuse</li>
-          </ul>
-          <img
-            src="./images/goals.jpg"
-            alt="Image related to goals"
-            class="goals-image"
-          />
-        </div>
-    </section>
-    <section>
-      <h2>Key Achievements</h2>
-        <div class="achievements-content">
-          <img
-            src="./images/achievements.jpg"
-            alt="Image related to achievements"
-            class="achievements-image"
-          />
-          <ul>
-            <li>Increased tap water coverage from 3.23 Cr to 13.98 Cr households</li>
-            <li>9-fold increase in connections in backward districts</li>
-            <li>23.55 lakh women trained for water quality testing</li>
-            <li>206 partner organizations and 99 institutions engaged</li>
-          </ul>
-        </div>
-    </section>
-    <section>
-      <h2>References</h2>
+    <section
+      class="content-section"
+      data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
+      <h2 class="section-heading">Jal Jeevan Mission Goals</h2>
+      <div class="content-text">
         <ul>
           <li>
-            <a href="https://jaljeevanmission.gov.in/sites/default/files/publication_and_reports/JJM-Brochure-Year-2024.pdf" target="_blank"
-              >JJM-Brochure-Year-2024</a>
+            Provide tap connections to all rural households for regular,
+            long-term supply of safe drinking water
           </li>
+          <li>Ensure water quality and reduce water-borne diseases</li>
           <li>
-            <a href="https://jaljeevanmission.gov.in/sites/default/files/guideline/WQMS-Framework.pdf" target="_blank"
-              >Water Quality, Quantity and Coverage Definitions</a>
+            Empower communities in planning, implementing, operating &
+            maintaining systems
           </li>
-          <li>
-            <a href="https://jalshakti-ddws.gov.in/sites/default/files/JJM_Operational_Guidelines.pdf" target="_blank"
-              >JJM Operational Guidelines</a>
-          </li>
+          <li>Promote groundwater recharge, conservation and reuse</li>
         </ul>
+      </div>
+      <div class="content-image">
+        <img src="./Images/Bg/goals.jpg" alt="Image related to goals" />
+      </div>
     </section>
 
-    
+    <section
+      class="content-section"
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
+      <h2 class="section-heading">Key Achievements</h2>
+      <div class="content-text">
+        <ul>
+          <li>
+            Increased tap water coverage from 3.23 Cr to 13.98 Cr households
+          </li>
+          <li>9-fold increase in connections in backward districts</li>
+          <li>23.55 lakh women trained for water quality testing</li>
+          <li>206 partner organizations and 99 institutions engaged</li>
+        </ul>
+      </div>
+      <div class="content-image">
+        <img
+          src="./Images/Bg/achievements.jpg"
+          alt="Image related to achievements"
+          class="achievements-image"
+        />
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="section-heading">References</h2>
+      <div class="content-text">
+        <ul class="references-list">
+          <li>
+            <a
+              href="https://jaljeevanmission.gov.in/sites/default/files/publication_and_reports/JJM-Brochure-Year-2024.pdf"
+              target="_blank"
+              >JJM-Brochure-Year-2024</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://jaljeevanmission.gov.in/sites/default/files/guideline/WQMS-Framework.pdf"
+              target="_blank"
+              >Water Quality, Quantity and Coverage Definitions</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://jalshakti-ddws.gov.in/sites/default/files/JJM_Operational_Guidelines.pdf"
+              target="_blank"
+              >JJM Operational Guidelines</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- EMBEDDING STREAMLIT APP -->
-    <button id="toggle-streamlit">Open Chatbot</button>
+    <button id="toggle-streamlit">Close Chatbot</button>
     <iframe
-    id="streamlit-container"
-    src="https://jjm-chatbot.streamlit.app/?embed=true&embed_options=light_theme&embed_options=hide_loading_screen"
-    style="height: 500px; width: 40%; border: 2px; border-color: blue;"
+      id="streamlit-container"
+      src="https://jjm-chatbot.streamlit.app/?embed=true&embed_options=light_theme&embed_options=hide_loading_screen"
+      style="height: 500px; width: 40%; border: 2px; border-color: blue"
     ></iframe>
     <script src="script.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- footer -->
     <footer class="footer">
       <div class="footer-left">
-        <img src="Logo/jjm_new_logo.svg" alt="JJM Logo" />
+        <img src="./Images/Logo/jjm_new_logo.svg" alt="JJM Logo" />
       </div>
       <div class="footer-center">
         <p>Prof Gopal Naik, JJM Chair Professor</p>
         <p>Mr. Chandan Kumar, Intern JJM</p>
         <p>Esha Chakraborty, Technical Assistant JJM</p>
-        <br>
-        <p style="background-color: whitesmoke; color: #173a76;">&copy; 2024 JJM Team IIM Bangalore.</p>
+        <br />
+        <p style="background-color: whitesmoke; color: #173a76">
+          &copy; 2024 JJM Team IIM Bangalore.
+        </p>
       </div>
-
       <div class="footer-right">
         <img
-          src="Logo/IIM_Bangalore_Logo.svg"
+          src="./Images/Logo/IIM_Bangalore_Logo.svg"
           alt="IIM Bangalore Logo"
         />
       </div>
     </footer>
-    
   </body>
 </html>
